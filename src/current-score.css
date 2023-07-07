@@ -1,0 +1,84 @@
+.container-current-scores {
+    margin: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.score-card {
+    width: 50%;
+    height: 208px;
+    background-color: rgb(247, 247, 247);
+    float: left;
+    margin: 0px 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+.score-card ul {
+    list-style-type:decimal;
+}
+.score-card ul li {
+    margin-top: 10px;
+}
+.score-card table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+.score-card table tr{
+    border-bottom: 1px solid rgb(223, 215, 215);
+    margin-top: 100px;
+}
+.score-card table tr:hover {
+    background-color: rgb(75, 77, 78);
+}
+
+.score-card table tr td, th {
+    height: 37px;
+}
+
+.live-tag {
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 57px;
+    /* background-color: saddlebrown; */
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    /* padding-top: 5px; */
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    /* display:inline-block; */
+    float: left;
+}
+.live-tag-odi {
+   background-color: aqua;
+}
+
+.live-tag-test {
+    background-color: greenyellow;
+ }
+
+.live-tag p {
+    margin: 0px;
+    padding-top: 5px;
+}
+
+.date-css {
+    /* display: flex; */
+    padding: 8px;
+    float: right;
+    /* width: 100%; */
+}
+.flag-css {
+    width: 100%;
+    float: left;
+}
+.flag-css span:first-child {
+    float: left;
+    margin-left: 20px;
+}
+.flag-css span:last-child {
+    float: right;
+    margin-right: 20px;
+    line-height: 3.5;
+}

@@ -1,25 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Route, Routes, useNavigate } from 'react-router';
+import Home from './Container/home';
+import Ranking from './Container/Ranking';
+import { BrowserRouter} from 'react-router-dom';
+import Currentscore from './Container/CurrentScore';
+import NavBar from './Container/NavBar';
+import CricketNews from './Container/cricketNews';
 
 function App() {
+  // const navigate = useNavigate();
+  // navigate("/");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <NavBar/>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/ranking" element={<Ranking />} />
+      <Route path="/scoreBoard" element={<Currentscore/>}/>
+      <Route path="/news" element={<CricketNews/>}/>
+    </Routes>
+    </>
   );
 }
 

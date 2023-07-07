@@ -1,0 +1,35 @@
+.main-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(6, 60, 99);
+    line-height: 72px;
+    height: 100px;  
+    /* text-align: center; */
+  }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: right;
+  }
+
+li a {
+  padding: 14px 14px;
+  text-decoration: none;
+  display: flex;
+  font-weight: bold;
+  color: white;
+  /* margin: 7px 0px 7px 0px; */
+}
+
+.mainHeader li  {
+  float: left !important;
+  font-size: 30px;
+}
+
