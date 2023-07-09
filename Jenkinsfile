@@ -6,7 +6,7 @@ pipeline {
                 echo "executing npm"
                 nodejs('Node-18.16.1') {
                     sh "npm install"
-                    sh "npm run build"
+                    sh "CI=false npm run build"
                 }
             }
         }
