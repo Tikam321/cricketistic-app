@@ -3,10 +3,11 @@ pipeline {
     stages {
         stage("build") {
             steps {
-                sh "npm install"
-                sh "npm run build"
-                echo "npm installing"
-                echo "npm application building"
+                echo "executing npm"
+                nodejs('Node-18.11.1') {
+                    sh "npm install"
+                    sh "npm run build"
+                }
             }
         }
         stage("test") {
