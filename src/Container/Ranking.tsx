@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import axios, * as others from 'axios';
+import axios from 'axios';
 import "../ranking.css"
 const Ranking = () => {
-    const [rankingList, setRankingList] = useState([]);
+    // const [rankingList, setRankingList] = useState([]);
     
-    useEffect(() => {
+    // useEffect(() => {
     //   const getData = async () => {
     //         const options = {
     //             method: 'GET',
@@ -24,27 +24,25 @@ const Ranking = () => {
     //     }
     //     getData();
     //    getRankingData();
-    }, []);
-    const getRankingData = async ()  => {
-        const options = {
-            method: 'GET',
-            url: 'https://cricket-live-data.p.rapidapi.com/fixtures',
-            headers: {
-              'X-RapidAPI-Key': '31befe2527mshaddceaf8e352eccp1dcb8fjsn330aab986fc5',
-              'X-RapidAPI-Host': 'cricket-live-data.p.rapidapi.com'
-            }
-          };
-        try {
-            const response = await axios.request(options);
-            console.log(response.data);
-        } catch (error) {
-            console.error(error);
-        }
-    }
+    // }, []);
+    // const getRankingData = async ()  => {
+    //     const options = {
+    //         method: 'GET',
+    //         url: 'https://cricket-live-data.p.rapidapi.com/fixtures',
+    //         headers: {
+    //           'X-RapidAPI-Key': '31befe2527mshaddceaf8e352eccp1dcb8fjsn330aab986fc5',
+    //           'X-RapidAPI-Host': 'cricket-live-data.p.rapidapi.com'
+    //         }
+    //       };
+    //     try {
+    //         const response = await axios.request(options);
+    //         console.log(response.data);
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // }
     return (
         <>
-        {console.log(rankingList)
-        }
             <div className="main-ranking container">
         <div className="card">
             <h2> T20 ranking </h2>
