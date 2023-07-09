@@ -1,10 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Route, Routes, useNavigate } from 'react-router';
+import { Route, Routes } from 'react-router';
 import Home from './Container/home';
 import Ranking from './Container/Ranking';
-import { BrowserRouter} from 'react-router-dom';
 import Currentscore from './Container/CurrentScore';
 import NavBar from './Container/NavBar';
 import CricketNews from './Container/cricketNews';

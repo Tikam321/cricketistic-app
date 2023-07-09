@@ -1,7 +1,6 @@
 import  "../global.css";
 import CurrentScore from "./CurrentScore";
 import Ranking from "./Ranking";
-import CricketNews from "./cricketNews";
 const Home = () => {
     return (
       <>

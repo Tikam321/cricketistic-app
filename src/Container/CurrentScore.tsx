@@ -13,12 +13,12 @@ const CurrentScore = () => {
                 12 jun 2034
             </div>
             <div className="flag-css">
-                <span>India <p className="flag-icon flag-icon-in flag-icon-squared"></p></span>
+                <span>India <span className="flag-icon flag-icon-in flag-icon-squared"></span></span>
                 <span>235/5 50.0 overs</span>
 
             </div>
             <div className="flag-css">
-                <span>New Zealand <h4 className="flag-icon flag-icon-au flag-icon-squared"></h4></span>
+                <span>New Zealand <span className="flag-icon flag-icon-au flag-icon-squared"></span></span>
                 <span>178/5 39.5 overs</span>
             </div>
             <div>
@@ -33,12 +33,12 @@ const CurrentScore = () => {
                 12 jun 2034
             </div>
             <div className="flag-css">
-                <span>India <p className="flag-icon flag-icon-in flag-icon-squared"></p></span>
+                <span>India <span className="flag-icon flag-icon-in flag-icon-squared"></span></span>
                 <span>235/5 50.0 overs</span>
 
             </div>
             <div className="flag-css">
-                <span>Austailia <h4 className="flag-icon flag-icon-au flag-icon-squared"></h4></span>
+                <span>Austailia <span className="flag-icon flag-icon-au flag-icon-squared"></span></span>
                 <span>178/5 39.5 overs</span>
             </div>
             <div>
@@ -53,12 +53,12 @@ const CurrentScore = () => {
                 12 jun 2034
             </div>
             <div className="flag-css">
-                <span>England <p className="flag-icon flag-icon-in flag-icon-squared"></p></span>
+                <span>England <span className="flag-icon flag-icon-in flag-icon-squared"></span></span>
                 <span>235/5 50.0 overs</span>
 
             </div>
             <div className="flag-css">
-                <span>Australia <h4 className="flag-icon flag-icon-au flag-icon-squared"></h4></span>
+                <span>Australia <span className="flag-icon flag-icon-au flag-icon-squared"></span></span>
                 <span>178/5 39.5 overs</span>
             </div>
             <div>
