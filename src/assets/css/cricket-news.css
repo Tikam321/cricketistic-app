@@ -15,7 +15,7 @@
 }
 
 .crick-img {
-    background-image: url('./crick-image.webp');
+    background-image: url('../images/crick-image.webp');
     background-color: #cccccc;
     background-repeat: no-repeat;
     background-size: 100% 100%;

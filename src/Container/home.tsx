@@ -1,4 +1,4 @@
-import  "../global.css";
+import '../assets/css/global.css';
 import CurrentScore from "./CurrentScore";
 import Ranking from "./Ranking";
 const Home = () => {

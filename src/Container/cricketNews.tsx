@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import "../cricket-news.css";
+import '../assets/css/cricket-news.css';
 interface contentType {
     content: contentListObj[];
 }
