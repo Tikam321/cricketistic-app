@@ -14,6 +14,7 @@ function App() {
   // navigate("/");
   return (
     <>
+    <h1> this is first Commit</h1>
     <NavBar/>
     <Routes>
       <Route path="/" element={<Home />} />
