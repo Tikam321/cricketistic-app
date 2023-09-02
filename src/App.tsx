@@ -11,6 +11,8 @@ import SignUpPage from './pages/Login/SignUpPage';
 function App() {
   return (
     <>
+    <h1> this is first Commit</h1>
+    <h1> this is second Commit</h1>
     <NavBar/>
     <Routes>
       <Route path="/" element={<Home />} />
