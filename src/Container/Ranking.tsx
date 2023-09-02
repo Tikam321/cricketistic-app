@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
-import "../ranking.css"
+// import "../ranking.css"
+import '../assets/css/ranking.css';
 const Ranking = () => {
     // const [rankingList, setRankingList] = useState([]);
     
