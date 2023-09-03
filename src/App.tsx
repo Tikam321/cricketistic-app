@@ -17,6 +17,7 @@ function App() {
     <h1> this is first Commit</h1>
     <h1> this is second Commit</h1>
     <NavBar/>
+    <h1>the reset --hard changes to this current commit</h1>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/ranking" element={<Ranking />} />
