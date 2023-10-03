@@ -1,0 +1,88 @@
+// .login-container {
+//     margin: auto;
+//     width: 500px;
+//     height: 275px;
+//     background-color: antiquewhite;
+//     display: grid;
+//     justify-content: center;
+//     align-content: center;
+//     margin-top: 15%;
+// }
+
+// .login-form input {
+//     display: inline-block;
+//     margin: 20px;
+//     width: 265px;
+//     height: 36px;
+//     font-size: 20px;
+// }
+
+// .login-container button {
+//     display: block;
+//     margin: auto;
+//     border: none;
+//     border-radius: 3px;
+//     width: 98px;
+//     background: rgb(6, 60, 99);
+//     padding: 14px;
+//     font-size: large;
+//     color: azure;
+// }
+
+label {
+    width: 161px;
+    display: block;
+    float: left;
+    margin-left: 45px;
+}
+
+.container li {
+    float: right;
+    float: left;
+    list-style: none;
+    display: inline;
+    margin: 15px;
+    width: 100%;
+}
+
+.container {
+    margin: 127px;
+    top: 25px;
+    position: relative;
+    background: #d9caca;
+    width: 42%;
+    height: 345px;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 20%;
+}
+
+button {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+input {
+    width: 40%;
+    height: 29px;
+    border-color: #d2bcbc;
+    border-block-end-style: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 6px;
+    width: 80px;
+    border-radius: 3px;
+}
+
+h1 {
+    text-align: center;
+}
+

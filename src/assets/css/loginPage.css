@@ -1,7 +1,7 @@
 .login-container {
     margin: auto;
     width: 500px;
-    height: 420px;
+    height: 275px;
     background-color: antiquewhite;
     display: grid;
     justify-content: center;
@@ -32,7 +32,4 @@
 label {
     margin-left: 15px;
 }
-
-
-
 

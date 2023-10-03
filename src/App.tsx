@@ -1,17 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Route, Routes, useNavigate } from 'react-router';
+import '../src/assets/css/App.css';
+import { Route, Routes } from 'react-router';
 import Home from './Container/home';
 import Ranking from './Container/Ranking';
-import { BrowserRouter} from 'react-router-dom';
 import Currentscore from './Container/CurrentScore';
 import NavBar from './Container/NavBar';
 import CricketNews from './Container/cricketNews';
+import LoginPage from './pages/Login/LoginPage';
+import SignUpPage from './pages/Login/SignUpPage';
 
 function App() {
-  // const navigate = useNavigate();
-  // navigate("/");
   return (
     <>
     <h1> this is first Commit</h1>
@@ -23,6 +20,8 @@ function App() {
       <Route path="/ranking" element={<Ranking />} />
       <Route path="/scoreBoard" element={<Currentscore/>}/>
       <Route path="/news" element={<CricketNews/>}/>
+      <Route path="/login" element={<LoginPage/>} />
+      <Route path="/signup" element={<SignUpPage/>}/>
     </Routes>
     </>
   );
