@@ -69,6 +69,7 @@ const Ranking = () => {
                         </tr>
                     ))}
                 
+
                   </tbody>
                 </table>
                 </div>
