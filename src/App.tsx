@@ -8,6 +8,8 @@ import { BrowserRouter} from 'react-router-dom';
 import Currentscore from './Container/CurrentScore';
 import NavBar from './Container/NavBar';
 import CricketNews from './Container/cricketNews';
+import SignUpPage from './pages/Login/SignUpPage';
+import LoginPage from './pages/Login/LoginPage';
 
 function App() {
   // const navigate = useNavigate();
@@ -20,6 +22,9 @@ function App() {
       <Route path="/ranking" element={<Ranking />} />
       <Route path="/scoreBoard" element={<Currentscore/>}/>
       <Route path="/news" element={<CricketNews/>}/>
+      <Route path="/signup" element={<SignUpPage/>}/>
+      <Route path="/login" element={<LoginPage/>}/>
+
     </Routes>
     </>
   );

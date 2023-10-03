@@ -1,4 +1,4 @@
-import "../current-score.css"
+import "../assets/css/current-score.css"
 const CurrentScore = () => {
     return (
     <>

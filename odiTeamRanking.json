@@ -1,0 +1,64 @@
+{
+    "oditeams": [
+        {
+            "country": "India",
+            "rating": 268,
+            "id": 1,
+            "position": 1
+        },
+        {
+            "country": "Australia",
+            "rating": 259,
+            "id": 2,
+            "position": 2
+        },
+        {
+            "country": "England",
+            "rating": 255,
+            "id": 3,
+            "position": 3
+        },
+        {
+            "country": "New Zealand",
+            "rating": 248,
+            "id": 4,
+            "position": 4
+        },
+        {
+            "country": "South Africa",
+            "rating": 240,
+            "id": 5,
+            "position": 5
+        },
+        {
+            "country": "sri lanka",
+            "rating": 234,
+            "id": 6,
+            "position": 6
+        },
+        {
+            "country": "India",
+            "rating": 230,
+            "id": 7,
+            "position": 7
+        },
+        {
+            "country": "Nepal",
+            "rating": 220,
+            "id": 8,
+            "position": 8
+        },
+        {
+            "country": "Pakistan",
+            "rating": 210,
+            "id": 9,
+            "position": 9
+        },
+        {
+            "country": "West Indies",
+            "rating": 198,
+            "id": 10,
+            "position": 10
+        }
+    ]
+}
