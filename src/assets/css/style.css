@@ -1,0 +1,11 @@
+@import "./App.css";
+@import "./current-score.css";
+@import "./cricket-news.css";
+@import "./global.css";
+@import "./index.css";
+@import "./index.scss";
+@import "./loginPage.css";
+@import "./loginPage.module.scss";
+@import "./ranking.css";
+@import "./signUpPage.css";
+@import "./signUpPage.module.scss";
