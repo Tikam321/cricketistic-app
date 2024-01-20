@@ -4,6 +4,8 @@ import {createLogger} from "redux-logger";
 import { createRootReducer } from "./reducer/rootReducer";
 import createSagaMiddleware from "@redux-saga/core";
 import { getT20Ranking, rankingSaga } from "../saga/rankingSaga";
+import { authSaga } from "../saga/authSaga";
+import rootSaga from "../saga/rootSaga";
 // import createRootReducer  from "./reducer/rootReducer";
 
 const middleware = getDefaultMiddleware();
@@ -22,5 +24,5 @@ export const store: EnhancedStore = configureStore({
     reducer: createRootReducer,
     middleware
   });
-sagaMiddleware.run(rankingSaga);
+sagaMiddleware.run(rootSaga);
 // export default store;

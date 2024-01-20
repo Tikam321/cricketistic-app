@@ -3,6 +3,8 @@ import axios, { Axios } from "axios";
 import RankingType from "../store/actionType/rankingType";
 import { getOdiRankingListSuccess, getT20RankingListSuccess, getTestRankinglistSuccess } from "../store/actions/rankingActions";
 import { rankingObjectType } from "../Container/Ranking";
+import { request } from "../helper/axiosHelper";
+import reportWebVitals from '../reportWebVitals';
 
 export function* rankingSaga() {
     yield takeEvery(RankingType.getT20RankingList, getT20Ranking);
@@ -17,9 +19,12 @@ export function* getT20Ranking() {
         url: "/getT20Ranking"
     };
     try {
-        const resp: {data: rankingObjectType[]} = yield call(axios.get, "/getT20Ranking") ;
-        console.warn(resp.data);
-        yield put(getT20RankingListSuccess(resp.data));
+        // const resp: {data: rankingObjectType[]} = yield call(axios.get, "/getT20Ranking", {headers: {
+        //     'Authorization': `Bearer ${localStorage.getItem('token')}`
+        // }}) ;
+        const resp: rankingObjectType[]= yield request('GET', "/getT20Ranking")
+        console.warn(resp);
+        yield put(getT20RankingListSuccess(resp));
     } 
     catch (error) {
         console.warn("there is error in api ", error);
@@ -33,9 +38,9 @@ export function* getOdiRankingSaga() {
         url: "/getTestRanking"
     };
     try {
-        const resp: {data: rankingObjectType[]} = yield call(axios.get, "/getOdiRanking") ;
-        console.warn(resp.data);
-        yield put(getOdiRankingListSuccess(resp.data));
+        const resp:  rankingObjectType[]= yield call(axios.get, "/getOdiRanking") ;
+        console.warn(resp);
+        yield put(getOdiRankingListSuccess(resp));
     } 
     catch (error) {
         console.warn("there is error in api ", error);
@@ -49,9 +54,9 @@ export function* getTestRankingSaga() {
         url: "/getTestRanking"
     };
     try {
-        const resp: {data: rankingObjectType[]} = yield call(axios.get, "/getTestRanking") ;
-        console.warn(resp.data);
-        yield put(getTestRankinglistSuccess(resp.data));
+        const resp: rankingObjectType[] = yield call(axios.get, "/getTestRanking") ;
+        console.warn(resp);
+        yield put(getTestRankinglistSuccess(resp));
     } 
     catch (error) {
         console.warn("there is error in api ", error);

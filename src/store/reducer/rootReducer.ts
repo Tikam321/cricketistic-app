@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import rankingReducer from './rankingReducer';
+import authReducer from './authReducer';
 
 export const createRootReducer = combineReducers({
-    ranking: rankingReducer
+    ranking: rankingReducer,
+    authReducer
 });
 
 // export default createRootReducer;

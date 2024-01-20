@@ -1,45 +1,37 @@
 import { Link } from "react-router-dom";
-import '../assets/css/global.css';
+import "../assets/css/global.css";
 const NavBar = () => {
-    return (
-      <>
+  return (
+    <>
       <div className="sticky">
-         <ul className="main-navbar"> 
-            <div className="mainHeader">
-                <li>
-            <Link  to="/">
-              CRICKPEDIA
-            </Link>
-            </li>
-            </div>
+        <ul className="main-navbar">
+          <div className="mainHeader">
             <li>
-            <Link  to="/login">
-              Login
-            </Link>
+              <Link to="/">CRICKPEDIA</Link>
+            </li>
+          </div>
+          <li>
+            <Link to="/login">Login</Link>
           </li>
           <li>
-            <Link  to="#NavBar">
-              Sign In
-            </Link>
+            <Link to="/signup">Sign In</Link>
           </li>
           <li>
-            <Link  to="/">
-              NavBar
-            </Link>
+            <Link to="/">NavBar</Link>
           </li>
           <li>
             <Link to="/news">Latest News</Link>
           </li>
           <li>
-          <Link to="/scoreBoard">Current Scores</Link>
+            <Link to="/scoreBoard">Current Scores</Link>
           </li>
           <li>
-          <Link to="/ranking">Ranking</Link>
+            <Link to="/ranking">Ranking</Link>
           </li>
         </ul>
-        </div>
-      </>
-    );
-}
+      </div>
+    </>
+  );
+};
 
 export default NavBar;
