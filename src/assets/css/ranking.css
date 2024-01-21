@@ -54,3 +54,20 @@ button.activated {
     color: white;
     background-color: rgb(6, 60, 99);
 }
+
+ td:hover .tooltip {
+    display: block;
+  }
+  
+ table td span.tooltip {
+    position: absolute;
+    white-space: nowrap;
+    display: none;
+    background: #ffffcc;
+    border: 1px solid black;
+    padding: 5px;
+    z-index: 1000;
+    color: black;
+    margin-left: 104px;
+  }
+  

@@ -10,7 +10,7 @@
   }
 
 .sticky {
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
 }
@@ -32,4 +32,3 @@ li a {
   float: left !important;
   font-size: 30px;
 }
-

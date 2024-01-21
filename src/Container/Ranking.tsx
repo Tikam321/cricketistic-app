@@ -1,11 +1,9 @@
-import { useEffect, useReducer, useRef, useState } from "react";
-import axios from 'axios';
-import {useDispatch, useSelector} from "react-redux";
+import { useEffect, useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import '../assets/css/ranking.css';
+import { rankingFormat, tempRankinglIST } from '../helper/rankingHelper';
 import { getOdiRankinglist, getT20RankingList, getTestRankinglist } from "../store/actions/rankingActions";
 import { RootState } from "../store/reducer/rootReducer";
-import rankingReducer from '../store/reducer/rankingReducer';
-import { rankingFormat } from '../helper/rankingHelper';
 
 export interface rankingObjectType {
     countryName: string,
@@ -28,6 +26,7 @@ const Ranking = () => {
     const [t20Rankings, setT20Rankings] = useState<rankingObjectType[]>([]);
     const [odiRankings, setOdiRankings] = useState<rankingObjectType[]>([]);
     const [testRankings, setTestRankings] = useState<rankingObjectType[]>([]);
+    const tooltipRef = useRef<HTMLSpanElement>(null);
 
     const [format, setFormat] = useState<string>("TEST");
 
@@ -77,7 +76,20 @@ const Ranking = () => {
             return testRankings;
         }
     };
-
+    useEffect(() => {
+        const tooltipSpan: any = document.querySelectorAll(".tooltip");
+        console.warn(tooltipSpan);
+        window.onmousemove = function (event) {
+            var x1 = (event.clientX - 100) + "px";
+            var y1 = (event.clientY - 30) + "px";
+            console.log(x1);
+            
+            for (var i = 0; i < tooltipSpan.length; i++) {
+                tooltipSpan[i].style.top = y1;
+                tooltipSpan[i].style.left = x1;
+            }
+        }
+    }, []);
     return (
         <>
 
@@ -108,12 +120,20 @@ const Ranking = () => {
                         <th>Position</th>
                         <th>Rating</th>
                     </tr>
-                    { getRankings(format).map((item: rankingObjectType) => (
+                    { tempRankinglIST.map((item: rankingObjectType) => (
                         <tr>
-                            <td>{item.position}</td>
-                            <td>{item.countryName}</td>
-                            <td>{item.position}</td>
-                            <td>{item.rankingPoints}</td>
+                            <td className="relative-tooltip" >{item.position}
+                            <span ref={tooltipRef} className="tooltip">{item.position}</span> 
+                            </td>
+                            <td className="relative-tooltip" >{item.countryName}
+                            <span className="tooltip">{item.countryName}</span> 
+                            </td>
+                            <td className="relative-tooltip" >{item.position}
+                            <span className="tooltip">{item.position}</span> 
+                            </td>
+                            <td className="relative-tooltip" > {item.rankingPoints}
+                            <span className="tooltip">{item.rankingPoints}</span> 
+                            </td>
                         </tr>
                     ))}
                   </tbody>
