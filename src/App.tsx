@@ -7,6 +7,7 @@ import NavBar from './Container/NavBar';
 import CricketNews from './Container/cricketNews';
 import LoginPage from './pages/Login/LoginPage';
 import SignUpPage from './pages/Login/SignUpPage';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (

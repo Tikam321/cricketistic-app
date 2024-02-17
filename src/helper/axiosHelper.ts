@@ -1,9 +1,9 @@
-import axios, { AxiosRequestConfig, AxiosResponse, InternalAxiosRequestConfig } from "axios";
+import  { AxiosRequestConfig, AxiosResponse, InternalAxiosRequestConfig } from "axios";
 
-axios.defaults.baseURL = "http://localhost:3000";
+// axios.defaults.baseURL = "http://localhost:3000";
 
 
-axios.defaults.headers.common['Authorization'] = "Bearer " + localStorage.getItem('token');
+// axios.defaults.headers.common['Authorization'] = "Bearer " + localStorage.getItem('token');
 // axios.interceptors.request.use((config: InternalAxiosRequestConfig) =>  {
 //     const token = localStorage.getItem('token');
 //     if (token) {
@@ -25,7 +25,7 @@ axios.defaults.headers.common['Authorization'] = "Bearer " + localStorage.getIte
 
 
 
-export const request = (method: string, url: string, data?: object) => axios({method, url, data});
+// export const request = (method: string, url: string, data?: object) => axios({method, url, data});
 
 
 

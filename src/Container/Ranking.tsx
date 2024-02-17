@@ -78,11 +78,14 @@ const Ranking = () => {
     };
     useEffect(() => {
         const tooltipSpan: any = document.querySelectorAll(".tooltip");
-        console.warn(tooltipSpan);
+        // console.warn(tooltipSpan);
         window.onmousemove = function (event) {
+            // console.warn("x" + event.clientX);
+            // console.warn("y" + event.clientY);
+
             var x1 = (event.clientX - 100) + "px";
             var y1 = (event.clientY - 30) + "px";
-            console.log(x1);
+            // console.log(x1);
             
             for (var i = 0; i < tooltipSpan.length; i++) {
                 tooltipSpan[i].style.top = y1;
@@ -105,11 +108,11 @@ const Ranking = () => {
 
                 </DownloadTableExcel> */}
                 {/* <button onClick={event => ExportToExcel(rankingList, "myFile")}> Export excel </button> */}
-                <h2>ICC Cricket Ranking - Men's Batting </h2>
+                <h2 role="title">ICC Cricket Ranking - Men's Batting</h2>
                 <div className="ranking-btn"> 
-                <button onClick={() => setFormat("TEST")} className={`${format === "TEST" ? "activated" : ""}`}> TEST </button>
-                <button onClick={() => setFormat("ODI")}className={`${format === "ODI" ? "activated" : ""}`}> ODI</button>
-                <button onClick={() => setFormat("T20")} className={`${format === "T20" ? "activated" : ""}`}> T20</button>
+                <button data-testid="testButton" onClick={() => setFormat("TEST")} className={`${format === "TEST" ? "activated" : ""}`}> TEST </button>
+                <button data-testid="odiButton"  onClick={() => setFormat("ODI")}className={`${format === "ODI" ? "activated" : ""}`}> ODI</button>
+                <button data-testid="t20Button"  onClick={() => setFormat("T20")} className={`${format === "T20" ? "activated" : ""}`}> T20</button>
                  </div>
                 <div className="card">
                 <table>
@@ -120,18 +123,18 @@ const Ranking = () => {
                         <th>Position</th>
                         <th>Rating</th>
                     </tr>
-                    { tempRankinglIST.map((item: rankingObjectType) => (
-                        <tr>
-                            <td className="relative-tooltip" >{item.position}
+                    {getRankings(format).map((item: rankingObjectType) => (
+                        <tr  >
+                            <td  className="relative-tooltip" >{item.position}
                             <span ref={tooltipRef} className="tooltip">{item.position}</span> 
                             </td>
-                            <td className="relative-tooltip" >{item.countryName}
+                            <td data-testid="tableData" className="relative-tooltip" >{item.countryName}
                             <span className="tooltip">{item.countryName}</span> 
                             </td>
-                            <td className="relative-tooltip" >{item.position}
+                            <td   className="relative-tooltip" >{item.position}
                             <span className="tooltip">{item.position}</span> 
                             </td>
-                            <td className="relative-tooltip" > {item.rankingPoints}
+                            <td  className="relative-tooltip" > {item.rankingPoints}
                             <span className="tooltip">{item.rankingPoints}</span> 
                             </td>
                         </tr>

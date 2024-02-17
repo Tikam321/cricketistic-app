@@ -18,7 +18,7 @@ const logger = createLogger({
 
 //  type  store1 = EnhancedStore;
 
-middleware.push(logger);
+// middleware.push(logger);
 middleware.push(sagaMiddleware);
 export const store: EnhancedStore = configureStore({
     reducer: createRootReducer,
